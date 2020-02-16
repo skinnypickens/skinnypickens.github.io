@@ -12,6 +12,7 @@ body {
 
 header h1 {
   text-align: center;
+  text-transform: lowercase;
 }
 
 header nav, .ordpadding {
@@ -42,7 +43,7 @@ header nav ul li {
   padding: 0 1vw;
 }
 
-header nav ul li a {
+header h1 a, header nav ul li a {
   color: inherit;
   text-decoration: none;
 }
