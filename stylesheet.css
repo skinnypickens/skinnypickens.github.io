@@ -10,6 +10,10 @@ body {
   padding: 1vh 5vw;
 }
 
+header h1 {
+  text-align: center;
+}
+
 header nav, .ordpadding {
   padding: -1vh -5vw;
 }
