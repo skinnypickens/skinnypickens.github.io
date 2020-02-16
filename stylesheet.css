@@ -7,6 +7,7 @@ body {
 }
 
 .defpadding {
+  /* default padding */
   padding: 1vh 5vw;
 }
 
@@ -15,7 +16,8 @@ header h1 {
   text-transform: lowercase;
 }
 
-header nav, .ordpadding {
+.ordpadding, header nav {
+  /* override default padding */
   padding: -1vh -5vw;
 }
 
@@ -27,20 +29,26 @@ header {
   border-bottom: 1px solid #000;
 }
 
-header nav {
+header section#nav-holder {
   background-color: #23252e;
   color: #fff;
 }
 
-header nav ul {
+header section#nav-holder nav {
+  margin: auto;
+  max-width: 75vw;
+  width: fit-content;
+}
+
+header section#nav-holder nav ul {
   list-style: none;
   margin: 0;
   padding: 0.5vh 1vw;
 }
 
-header nav ul li {
+header section#nav-holder nav ul li {
   display: inline-block;
-  padding: 0 1vw;
+  padding: 1vh 1vw;
 }
 
 header h1 a, header nav ul li a {
