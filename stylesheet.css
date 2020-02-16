@@ -1,5 +1,58 @@
+/* stylesheet, test */
+
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.defpadding {
+  padding: 1vh 5vw;
+}
+
+header nav, .ordpadding {
+  padding: -1vh -5vw;
+}
+
+footer {
+  border-top: 1px solid #000;
+}
+
+header {
+  border-bottom: 1px solid #000;
+}
+
+header nav {
+  background-color: #23252e;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5vh 1vw;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 1vw;
+}
+
+header nav ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header nav ul li a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+p.center, footer p {
+  text-align: center;
 }
