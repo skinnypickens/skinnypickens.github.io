@@ -1,9 +1,17 @@
 /* stylesheet, test */
 
+:root {
+  --accented-back: #23252e;
+  --accented-front: #fff;
+  --primary-front: #0c0e12;
+}
+
 body {
+  color: var(--primary-front);
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  text-transform: lowercase;
 }
 
 .defpadding {
@@ -22,16 +30,20 @@ header h1 {
 }
 
 footer {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--primary-front);
 }
 
 header {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--primary-front);
+}
+
+header p#subtitle {
+  text-align: center;
 }
 
 header section#nav-holder {
-  background-color: #23252e;
-  color: #fff;
+  background-color: var(--accented-back);
+  color: var(--accented-front);
 }
 
 header section#nav-holder nav {
@@ -48,7 +60,7 @@ header section#nav-holder nav ul {
 
 header section#nav-holder nav ul li {
   display: inline-block;
-  padding: 1vh 1vw;
+  padding: 1vh 2vw;
 }
 
 header h1 a, header nav ul li a {
@@ -62,8 +74,16 @@ header nav ul li a:active {
 }
 
 main {
-  padding-bottom: 2vh;
-  padding-top: 2vh;
+  margin: auto;
+  padding: 0.5vh 5vw;
+  max-width: 1280px;
+}
+
+main h2 {
+  border-bottom: solid 1px var(--accented-back);
+  color: var(--accented-back);
+  padding-bottom: 4px;
+  text-transform: lowercase;
 }
 
 p.center, footer p {

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <title>navigation bar. skinny pickens</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+      <h1><a href="/index.html">Skinny Pickens's Skinny Website</a></h1>
+      <p id="subtitle">Quaked buttholes are located here.</p>
+      <section id="nav-holder">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="https://www.teespring.com/stores/skinny-pickens" target="_blank">Merch</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <script>
+      var random = [
+        "Quaked buttholes live here.",
+        "Skinny Legends only.",
+        "I love hot men.",
+        "This website is literally so <em>skinny</em> that I cannot.",
+        "Is it hot in here or is it just you?",
+        "That boy is a monster (m- m- m- monster)"
+      ];
+
+      var gen = random[Math.floor(Math.random()*random.length)];
+      document.getElementById("subtitle").innerHTML = gen;
+    </script>
+</body>
+</html>
