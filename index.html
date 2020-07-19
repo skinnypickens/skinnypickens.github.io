@@ -8,7 +8,7 @@
 <body>
   <div id="header"></div>
   <main>
-    <h2>Home.</h2>
+    <h2>Welcome</h2>
     <p>Welcome to the Skinny Pickens web page. I really don't know what to put in here because I'm just doing this for fun but welcome. I hope you find this page interesting because I don't, so I'm just going to put interesting information about me here.</p>
     <h3>Cool things about me.</h3>
     <ul>
@@ -21,7 +21,7 @@
   <div id="footer"></div>
   <script>
     window.onload = function(){
-      $.get("nav.html", function(data){
+      $.get("header.html", function(data){
         $("#header").html(data);
       })
       $.get("footer.html", function(data){
