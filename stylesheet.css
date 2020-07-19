@@ -4,8 +4,8 @@
  */
 
 :root {
-  --accent-blue-color: #2379ef;
-  --accent-darkblue-color: #245AC6;
+  --accent-color: #2f2e2e;
+  --accent-dark: #110d0d;
   --accent-overlay: #fff;
 }
 
@@ -26,7 +26,7 @@ header > h1,
 h1.site-name {
   font-family: 'Times New Roman', 'Times', serif;
   font-size: 36px;
-  color: var(--accent-blue-color);
+  color: var(--accent-color);
   margin: 0;
 }
 
@@ -38,7 +38,7 @@ h1.site-name > a:link {
 }
 
 nav {
-  background-color: var(--accent-blue-color);
+  background-color: var(--accent-color);
   color: var(--accent-overlay);
 }
 
@@ -53,7 +53,7 @@ nav > ul > li > a:link {
 }
 
 nav > ul > li > a:hover {
-  background-color: var(--accent-darkblue-color);
+  background-color: var(--accent-dark);
 }
 
 nav > ul > li.first > a:link {
@@ -93,7 +93,7 @@ a:visited {
 
 a.accented:link,
 a.accented:visited {
-  color: var(--accent-blue-color);
+  color: var(--accent-color);
 }
 
 h1,
