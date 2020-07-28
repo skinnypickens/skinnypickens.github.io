@@ -1,33 +1,35 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>home. skinny pickens.</title>
-  <link rel="stylesheet" href="stylesheet.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Skinny Pickens</title>
+    <link rel="stylesheet" href="assets/plex/css/ibm-plex.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div id="header"></div>
-  <main>
-    <h2>Welcome</h2>
-    <p>Welcome to the Skinny Pickens web page. I really don't know what to put in here because I'm just doing this for fun but welcome. I hope you find this page interesting because I don't, so I'm just going to put interesting information about me here.</p>
-    <h3>Cool things about me.</h3>
-    <ul>
-      <li>I am a <strong>Scorpio</strong> and was born <time datetime="2000-11-20 00:21">November 20, 2000 at 12:21 AM</time>.</li>
-      <li>My favourite color is <span style="color: #007fff">azure blue</span>.</li>
-      <li>I know how to play the B&#9837; Clarinet and Guitar.</li>
-      <li>I have a SoundCloud because I'm cool.</li>
-    </ul>
-  </main>
-  <div id="footer"></div>
-  <script>
-    window.onload = function(){
-      $.get("header.html", function(data){
-        $("#header").html(data);
-      })
-      $.get("footer.html", function(data){
-        $("#footer").html(data);
-      })
-    }
-  </script>
+<div id="site-wrapper">
+    <div id="header">
+        <header>
+            <h1 id="site-name"><a href="index.html">The Skinny Zone</a></h1>
+        </header>
+        <nav id="sp-nav">
+            <ul class="no-style centered horizontal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.teespring.com/store/skinny-pickens"
+                       target="_blank">Merch</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h2>Under construction.</h2>
+        <p>Welcome to the Skinny Pickens official website. At this time, the
+            page is under construction.</p>
+    </main>
+    <div id="footer"></div>
+</div>
+<script>
+
+</script>
 </body>
 </html>

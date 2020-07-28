@@ -1,110 +1,109 @@
 /*
- Stylesheet for https://luisoida.github.io
- Version 2.0 - revision of 2020 July 19
+ Stylesheet for skinnypickens.github.io
  */
 
 :root {
-  --accent-color: #2f2e2e;
-  --accent-dark: #110d0d;
-  --accent-overlay: #fff;
-}
-
-article,
-header,
-footer,
-main,
-section {
-  display: block;
+    --header-color: #222;
+    --header-back: #777;
+    --header-back-hover: #616161;
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Microsoft Sans Serif', 'Arial', 'Lucida Grande', 'Tahoma', sans-serif;
-  margin: 0;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', 'Microsoft Sans Serif', sans-serif;
+    margin: 0;
 }
 
-header > h1,
-h1.site-name {
-  font-family: 'Times New Roman', 'Times', serif;
-  font-size: 36px;
-  color: var(--accent-color);
-  margin: 0;
+article,
+aside,
+footer,
+header,
+main,
+section {
+    display: block;
 }
 
-header > h1 > a:link,
-h1.site-name > a:link {
-  display: block;
-  padding: 16px 24px;
-  width: 100%;
+header > h1 {
+    border-bottom: none;
+    color: var(--header-color);
+    margin: 0;
 }
 
-nav {
-  background-color: var(--accent-color);
-  color: var(--accent-overlay);
+header > h1 a {
+    display: block;
+    padding: 4vh 4vw 3.5vh;
 }
 
-nav > ul {
-  margin: 0;
+nav#sp-nav,
+div#sp-nav {
+    background-color: var(--header-back);
+    color: white;
+    margin: 0 auto 0.125vh;
 }
 
-nav > ul > li > a:link {
-  display: block;
-  margin-bottom: 1px;
-  padding: 12px 16px;
+nav#sp-nav > ul {
+    cursor: default;
+    margin: 0;
 }
 
-nav > ul > li > a:hover {
-  background-color: var(--accent-dark);
+nav#sp-nav > ul > li {
+    margin: 0 2pt;
 }
 
-nav > ul > li.first > a:link {
-  margin-left: 16px;
+nav#sp-nav > ul > li > * {
+    border-radius: 10px;
+    display: block;
+    padding: 6pt 8pt;
+    margin: 3px 0;
+}
+
+nav#sp-nav > ul > li > a:hover {
+    background-color: var(--header-back-hover);
+    transition: ease-in-out 200ms;
+}
+
+nav#sp-nav > ul li:first-child {
+    margin-left: 0;
+}
+
+nav#sp-nav > ul li:last-child {
+    margin-right: 0;
 }
 
 main {
-  padding: 10px 24px;
+    margin: 0 4vw;
 }
 
 footer {
-  border-top: solid 1px #ddd;
-}
-
-footer > p#copyright-notice {
-  text-align: center;
-}
-
-ul.horizontal,
-ul.no-bullet {
-  list-style: none;
-  padding: 0;
-}
-
-ul.horizontal > li {
-  display: inline-block;
+    border-top: solid 1px gray;
 }
 
 a:link {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 a:visited {
-  color: inherit;
-}
-
-a.accented:link,
-a.accented:visited {
-  color: var(--accent-color);
+    color: inherit;
 }
 
 h1,
 h2 {
-  font-family: 'Georgia', 'Times New Roman', 'Times', serif;
-  font-weight: 500;
+    border-bottom: solid 1px gray;
+    font-weight: 400;
+    padding-bottom: 4px;
 }
 
-h2 {
-  border-bottom: solid 1px #ddd;
-  font-size: 28px;
-  margin: 16px 0 4px 0;
-  padding-bottom: 4px;
+ul.no-style,
+ol.no-style {
+    list-style: none;
+    padding: 0;
+}
+
+ul.horizontal > li,
+li.horizontal > li {
+    display: inline-block;
+}
+
+.centered {
+    text-align: center;
 }
